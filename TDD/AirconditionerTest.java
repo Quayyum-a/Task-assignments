@@ -1,53 +1,81 @@
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-
+import static org.junit.jupiter.api.Assertions.*;
 
 public class AirconditionerTest {
 
   @Test
-  public void test_TurnOn() {
+  public void test_Airconditioner_IsInitiallyOff() {
+    Airconditioner ac = new Airconditioner();
+    assertFalse(ac.isOn());
+  }
+
+  @Test
+  public void test_TurnOn_Airconditioner() {
     Airconditioner ac = new Airconditioner();
     assertTrue(ac.turnOn());
+    assertTrue(ac.isOn());
   }
 
   @Test
-  public void test_TurnOff_WhenACIsOn() {
+  public void test_TurnOff_Airconditioner() {
     Airconditioner ac = new Airconditioner();
     ac.turnOn();
-    assertFalse(ac.turnOff());
-  }
-  
-  @Test
-  public void test_IncreaseTemperature() {
-    Airconditioner ac = new Airconditioner();
-    assertEquals(17, ac.increaseTemperature()); 
-  }
-  
-  @Test
-  public void test_DecreaseTemperature() {
-    Airconditioner ac = new Airconditioner();
-    ac.increaseTemperature();
-    assertEquals(16, ac.decreaseTemperature()); 
-  }
-  
-  @Test
-  public void test_TemperatureDoesNotGoBeyond30() {
-    Airconditioner ac = new Airconditioner();
-    ac.setTemperature(30); 
-    ac.increaseTemperature(); 
-    int result = ac.getTemperature(); 
-    assertEquals(30, result); 
+    assertEquals(false, ac.turnOff());
+    assertFalse(ac.isOn());
   }
 
   @Test
-  public void test_TemperatureDoesNotGoBelow16() {
+  public void test_CannotIncreaseTemperature_WhenACIsOff() {
     Airconditioner ac = new Airconditioner();
-    ac.setTemperature(16); 
-    ac.decreaseTemperature(); 
-    int result = ac.getTemperature(); 
-    assertEquals(16, result); 
+    int tempBefore = ac.getTemperature();
+    ac.increaseTemperature();
+    assertEquals(tempBefore, ac.getTemperature());
+  }
+
+  @Test
+  public void test_CannotDecreaseTemperature_WhenACIsOff() {
+    Airconditioner ac = new Airconditioner();
+    int tempBefore = ac.getTemperature();
+    ac.decreaseTemperature();
+    assertEquals(tempBefore, ac.getTemperature());
+  }
+
+  @Test
+  public void test_IncreaseTemperature_WhenACIsOn() {
+    Airconditioner ac = new Airconditioner();
+    ac.turnOn();
+    int tempBefore = ac.getTemperature();
+    ac.increaseTemperature();
+    assertEquals(tempBefore + 1, ac.getTemperature());
+  }
+
+  @Test
+  public void test_DecreaseTemperature_WhenACIsOn() {
+    Airconditioner ac = new Airconditioner();
+    ac.turnOn();
+    ac.increaseTemperature();
+    int tempBefore = ac.getTemperature();
+    ac.decreaseTemperature();
+    assertEquals(tempBefore - 1, ac.getTemperature());
+  }
+
+  @Test
+  public void test_TemperatureDoesNotExceed30() {
+    Airconditioner ac = new Airconditioner();
+    ac.turnOn();
+    for (int count = 0; count < 20; count++) {
+      ac.increaseTemperature();
+    }
+    assertEquals(30, ac.getTemperature());
+  }
+
+  @Test
+  public void test_TemperatureDoesNotDropBelow16() {
+    Airconditioner ac = new Airconditioner();
+    ac.turnOn();
+    for (int count = 0; count < 20; count++) {
+      ac.decreaseTemperature();
+    }
+    assertEquals(16, ac.getTemperature());
   }
 }

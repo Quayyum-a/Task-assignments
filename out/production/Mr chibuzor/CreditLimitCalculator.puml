@@ -1,0 +1,20 @@
+@startuml
+start
+
+:Input customer details;
+:Read account number;
+:Read beginning balance;
+:Read total charges;
+:Read total credits;
+:Read credit limit;
+
+:Calculate new balance (newBalance = beginningBalance + charges - credits);
+
+if (newBalance > creditLimit?) then (yes)
+  :Display "Credit limit exceeded";
+else (no)
+  :Display "New balance: " + newBalance;
+endif
+
+stop
+@enduml

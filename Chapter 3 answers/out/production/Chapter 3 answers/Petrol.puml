@@ -1,0 +1,21 @@
+@startuml
+class PetrolPurchase{
+    - String location
+    - String type
+    - int quantity
+    - double price
+    - double discount
+    + *constructor*PetrolPurchase(location : String, type : String, quantity : int, price : Double, discount : Double
+    + setLocation(location : String)
+    + getLocation() : String
+    + setType(type : String)
+    + getType() : String
+    + setQuantity(quantity : int)
+    + getQuantity() : int
+    + setPrice(price : Double)
+    + getPrice() : Double
+    + setDiscount(discount : Double)
+    + getDiscount() : Double
+    + getPurchaseAmount() : Double
+}
+@enduml

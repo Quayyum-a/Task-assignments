@@ -42,6 +42,6 @@ public class MilesPerGallon {
       
         
 
-       
+    scanner.close(); 
     }
 }

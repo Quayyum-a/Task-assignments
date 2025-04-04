@@ -4,7 +4,7 @@ public class PiCalculation {
         int terms = 200000;
 
         System.out.printf("%-10s%-15s%n", "Term", "Approximation");
-        for (int i = 1; count <= terms; count++) {
+        for (int count = 1; count <= terms; count++) {
             if (count % 2 == 1) {
                 pi += 4.0 / (2 * count - 1);
             } else {

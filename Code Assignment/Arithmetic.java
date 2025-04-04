@@ -52,4 +52,14 @@ import java.util.Scanner;
 
  }
 
+  public static int sumOfSquare(int i, int j) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'sumOfSquare'");
+  }
+
+  public int DifferenceOfSum(int i, int j) {
+    // TODO Auto-generated method stub
+    throw new UnsupportedOperationException("Unimplemented method 'DifferenceOfSum'");
+  }
+
 }

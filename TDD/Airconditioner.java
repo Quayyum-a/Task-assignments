@@ -1,36 +1,40 @@
 public class Airconditioner {
 
-  private int temperature = 16; 
+  private int temperature;
+  private boolean isOn;
 
-  public void setTemperature(int temp) {
-    this.temperature = temp; 
+  public Airconditioner() {
+    this.temperature = 16;
+    this.isOn = false;
   }
- 
+
   public boolean turnOn() {
-    return true;
+    isOn = true;
+    return isOn;
   }
 
   public boolean turnOff() {
-    return false;
+    isOn = false;
+    return isOn;
   }
 
-  public int increaseTemperature() {
+  public void increaseTemperature() {
+    if (isOn && temperature < 30) {
       temperature++;
-      if (temperature > 30) {
-        temperature = 30; 
-      }
-      return temperature;
-  }
-
-  public int decreaseTemperature() { 
-    temperature--;
-    if (temperature < 16) {
-      temperature = 16; 
     }
+  }
+
+  public void decreaseTemperature() {
+    if (isOn && temperature > 16) {
+      temperature--;
+    }
+  }
+
+  public int getTemperature() {
     return temperature;
   }
 
-  public int getTemperature() { 
-    return temperature;
+  public boolean isOn() {
+    return isOn;
   }
 }
