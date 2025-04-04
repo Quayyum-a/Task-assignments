@@ -1,9 +1,0 @@
-{
-    "type": "java",
-    "name": "Debug JUnit Tests",
-    "request": "launch",
-    "mainClass": "org.junit.platform.console.ConsoleLauncher",
-    "args": [
-        "--select-package=com.yourpackage"  // Change to your package name
-    ]
-}
