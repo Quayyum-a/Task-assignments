@@ -1,3 +1,5 @@
+package daySeven.menstrualWahala;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -61,7 +63,7 @@ public class MenstrualCycleTest {
     public void test_UserEntersShortPeriodDuration(){
         MenstrualCycle cycle = new MenstrualCycle();
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            cycle.setPeriodDuration(9);
+            cycle.setPeriodDuration(0);
         });
         assertEquals("Invalid period duration. Period duration must be between 2 and 8 days.", exception.getMessage());
         assertEquals(5, cycle.getPeriodDuration());
@@ -71,7 +73,7 @@ public class MenstrualCycleTest {
     public void test_UserEntersLongPeriodDuration(){
         MenstrualCycle cycle = new MenstrualCycle();
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            cycle.setPeriodDuration(0);
+            cycle.setPeriodDuration(9);
         });
         assertEquals("Invalid period duration. Period duration must be between 2 and 8 days.", exception.getMessage());
         assertEquals(5, cycle.getPeriodDuration());

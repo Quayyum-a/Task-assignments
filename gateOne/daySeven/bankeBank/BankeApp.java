@@ -1,3 +1,5 @@
+package daySeven.bankeBank;
+
 public class BankeApp {
     private String firstName;
     private String lastName;
