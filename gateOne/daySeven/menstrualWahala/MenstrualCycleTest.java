@@ -17,7 +17,7 @@ public class MenstrualCycleTest {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             cycle.setStartDate("02-2020-8");
         });
-        assertEquals("Invalid date format. Please use YYYY-MM-DD format.", exception.getMessage());
+        assertEquals("Invalid date format. Use YYYY-MM-DD.", exception.getMessage());
     }
 
     @Test
@@ -32,7 +32,7 @@ public class MenstrualCycleTest {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             cycle.setAverageCycleLength(20);
         });
-        assertEquals("Invalid cycle length. Cycle length must be between 21 and 35 days.", exception.getMessage());
+        assertEquals("Cycle length must be between 21 and 35 days.", exception.getMessage());
         assertEquals(28, cycle.getAverageCycleLength());
     }
 
@@ -42,7 +42,7 @@ public class MenstrualCycleTest {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             cycle.setAverageCycleLength(36);
         });
-        assertEquals("Invalid cycle length. Cycle length must be between 21 and 35 days.", exception.getMessage());
+        assertEquals("Cycle length must be between 21 and 35 days.", exception.getMessage());
         assertEquals(28, cycle.getAverageCycleLength());
     }
 
@@ -65,7 +65,7 @@ public class MenstrualCycleTest {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             cycle.setPeriodDuration(0);
         });
-        assertEquals("Invalid period duration. Period duration must be between 2 and 8 days.", exception.getMessage());
+        assertEquals("Period duration must be between 2 and 8 days.", exception.getMessage());
         assertEquals(5, cycle.getPeriodDuration());
     }
 
@@ -75,7 +75,7 @@ public class MenstrualCycleTest {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             cycle.setPeriodDuration(9);
         });
-        assertEquals("Invalid period duration. Period duration must be between 2 and 8 days.", exception.getMessage());
+        assertEquals("Period duration must be between 2 and 8 days.", exception.getMessage());
         assertEquals(5, cycle.getPeriodDuration());
     }
     @Test
@@ -108,7 +108,7 @@ public class MenstrualCycleTest {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             cycle.setAverageCycleLength(20);
         });
-        assertEquals("Invalid cycle length. Cycle length must be between 21 and 35 days.", exception.getMessage());
+        assertEquals("Cycle length must be between 21 and 35 days.", exception.getMessage());
         cycle.setPeriodDuration(7);
         assertEquals("2022-01-29", cycle.calculateNextPeriodDate());
     }
@@ -120,7 +120,7 @@ public class MenstrualCycleTest {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> {
             cycle.setAverageCycleLength(36);
         });
-        assertEquals("Invalid cycle length. Cycle length must be between 21 and 35 days.", exception.getMessage());
+        assertEquals("Cycle length must be between 21 and 35 days.", exception.getMessage());
         cycle.setPeriodDuration(7);
         assertEquals("2022-01-29", cycle.calculateNextPeriodDate());
     }

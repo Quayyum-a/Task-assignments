@@ -1,118 +1,115 @@
 package daySeven.bankeBank;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class BankeApp {
-    private String firstName;
-    private String lastName;
-    private int pin;
-    private double balance;
-    private boolean accountExists;
+    private final Map<String, Account> accounts = new HashMap<>();
+    private Account activeAccount;
 
-    public void createAccount(String firstName, String lastName, int pin) {
-        if (!firstName.matches("^[A-Za-z]+$")) {
-            throw new IllegalArgumentException("First name should contain only letters");
-        }
-        if (!lastName.matches("^[A-Za-z]+$")) {
-            throw new IllegalArgumentException("Last name should contain only letters");
-        }
-        if (String.valueOf(pin).length() != 4 || !String.valueOf(pin).matches("^[0-9]+$")) {
-            throw new IllegalArgumentException("PIN must be exactly 4 digits");
-        }
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.pin = pin;
-        this.balance = 0;
-        this.accountExists = true;
+    public String createAccount(String firstName, String lastName, int pin) {
+        validateName(firstName);
+        validateName(lastName);
+        validatePin(pin);
+        String accountNumber = generateAccountNumber();
+        Account newAccount = new Account(firstName, lastName, pin, accountNumber);
+        accounts.put(accountNumber, newAccount);
+        activeAccount = newAccount;
+        return accountNumber;
     }
 
-    public String getAccount() {
-        if (!accountExists) {
-            throw new IllegalStateException("No active account");
+    public void login(String accountNumber, int pin) {
+        Account account = accounts.get(accountNumber);
+        if (account == null) {
+            throw new IllegalArgumentException("Account not found");
         }
-        return firstName + " " + lastName;
+        if (!account.verifyPin(pin)) {
+            throw new IllegalArgumentException("Incorrect PIN");
+        }
+        activeAccount = account;
     }
 
-    public void closeAccount() {
-        if (!accountExists) {
-            throw new IllegalStateException("No active account to close");
-        }
-        accountExists = false;
-        balance = 0;
+    public void logout() {
+        activeAccount = null;
     }
 
     public void deposit(double amount) {
-        if (!accountExists) {
-            throw new IllegalStateException("No active account");
-        }
-        if (amount <= 0) {
-            throw new IllegalArgumentException("Deposit amount must be greater than zero");
-        }
-        balance += amount;
+        checkActiveAccount();
+        activeAccount.deposit(amount);
     }
 
-    public void withdraw(double amount, int enteredPin) {
-        if (!accountExists) {
-            throw new IllegalStateException("No active account");
-        }
-        if (enteredPin != pin) {
-            throw new IllegalArgumentException("Incorrect PIN");
-        }
-        if (amount <= 0) {
-            throw new IllegalArgumentException("Withdrawal amount must be greater than zero");
-        }
-        if (amount > balance) {
-            throw new IllegalArgumentException("Insufficient funds");
-        }
-        balance -= amount;
+    public void withdraw(double amount, int pin) {
+        checkActiveAccount();
+        activeAccount.withdraw(amount, pin);
     }
 
     public double getBalance() {
-        if (!accountExists) {
-            throw new IllegalStateException("No active account");
-        }
-        return balance;
+        checkActiveAccount();
+        return activeAccount.getBalance();
     }
 
-    public void transfer(BankeApp recipient, double amount, int enteredPin) {
-        if (!accountExists) {
-            throw new IllegalStateException("No active account");
-        }
-        if (!recipient.accountExists) {
+    public void transfer(String recipientAccountNumber, double amount, int pin) {
+        checkActiveAccount();
+        Account recipient = accounts.get(recipientAccountNumber);
+        if (recipient == null) {
             throw new IllegalArgumentException("Recipient account does not exist");
         }
-        if (enteredPin != pin) {
-            throw new IllegalArgumentException("Incorrect PIN");
-        }
-        if (amount <= 0) {
-            throw new IllegalArgumentException("Transfer amount must be greater than zero");
-        }
-        if (amount > balance) {
-            throw new IllegalArgumentException("Insufficient funds");
-        }
-        balance -= amount;
+        activeAccount.withdraw(amount, pin);
         recipient.deposit(amount);
     }
 
     public void changePin(int oldPin, int newPin) {
-        if (!accountExists) {
+        checkActiveAccount();
+        activeAccount.changePin(oldPin, newPin);
+    }
+
+    public boolean verifyPin(int pin) {
+        checkActiveAccount();
+        return activeAccount.verifyPin(pin);
+    }
+
+    public void closeAccount(int pin) {
+        checkActiveAccount();
+        if (!activeAccount.verifyPin(pin)) {
+            throw new IllegalArgumentException("Incorrect PIN");
+        }
+        accounts.remove(activeAccount.getAccountNumber());
+        activeAccount = null;
+    }
+
+    public String getAccountName() {
+        checkActiveAccount();
+        return activeAccount.getFirstName() + " " + activeAccount.getLastName();
+    }
+
+    public String getAccountNumber() {
+        checkActiveAccount();
+        return activeAccount.getAccountNumber();
+    }
+
+    public int getAccountCount() {
+        return accounts.size();
+    }
+
+    private String generateAccountNumber() {
+        return String.valueOf(1000000000 + (int) (Math.random() * 900000000));
+    }
+
+    private void validateName(String name) {
+        if (!name.matches("^[A-Za-z]+$")) {
+            throw new IllegalArgumentException("Name should contain only letters");
+        }
+    }
+
+    private void validatePin(int pin) {
+        if (String.valueOf(pin).length() != 4 || !String.valueOf(pin).matches("^[0-9]+$")) {
+            throw new IllegalArgumentException("PIN must be exactly 4 digits");
+        }
+    }
+
+    private void checkActiveAccount() {
+        if (activeAccount == null) {
             throw new IllegalStateException("No active account");
         }
-        if (oldPin != pin) {
-            throw new IllegalArgumentException("Old PIN is incorrect");
-        }
-        if (String.valueOf(newPin).length() != 4 || !String.valueOf(newPin).matches("^[0-9]+$")) {
-            throw new IllegalArgumentException("New PIN must be exactly 4 digits");
-        }
-        pin = newPin;
-    }
-
-    public boolean verifyPin(int enteredPin) {
-        if(enteredPin != pin){
-            throw new IllegalArgumentException("PIN is incorrect");
-        }
-        return true;
-    }
-
-    public boolean accountExists() {
-        return accountExists;
     }
 }

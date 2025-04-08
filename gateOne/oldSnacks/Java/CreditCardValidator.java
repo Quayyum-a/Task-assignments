@@ -46,6 +46,7 @@ public class CreditCardValidator {
                     digit -= 9;
                 }
             }
+
             sum1 += digit;
 
             doubleDigit = !doubleDigit;
