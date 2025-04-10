@@ -1,4 +1,4 @@
-package daySeven.bankeBank;
+package daySeven.bankeBank.Java;
 
 public class Account {
     private final String firstName;
@@ -58,6 +58,9 @@ public class Account {
     public void changePin(int oldPin, int newPin) {
         if (!verifyPin(oldPin)) {
             throw new IllegalArgumentException("Old PIN is incorrect");
+        }
+        if (newPin == oldPin) {
+            throw new IllegalArgumentException("New PIN cannot be the same as the old PIN");
         }
         if (String.valueOf(newPin).length() != 4) {
             throw new IllegalArgumentException("New PIN must be exactly 4 digits");

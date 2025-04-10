@@ -7,7 +7,7 @@ public class MenstrualCycle {
     private LocalDate startDate;
     private int averageCycleLength = 28;
     private int periodDuration = 5;
-    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    private final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
 
     public void setStartDate(String date) {
@@ -22,6 +22,7 @@ public class MenstrualCycle {
     }
 
     public String getStartDate() {
+
         return startDate != null ? startDate.format(DATE_FORMATTER) : null;
     }
 

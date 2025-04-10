@@ -1,4 +1,4 @@
-package daySeven.bankeBank;
+package daySeven.bankeBank.Java;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

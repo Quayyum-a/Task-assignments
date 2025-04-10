@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="865f9944-68f8-4779-9d93-445a18f68dae" name="Changes" comment="Amended">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daySeven/bankeBank/Python/.idea/Python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daySeven/bankeBank/Python/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daySeven/bankeBank/Python/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daySeven/bankeBank/Python/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daySeven/bankeBank/Python/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daySeven/bankeBank/Python/Account.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daySeven/bankeBank/Python/AccountTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daySeven/bankeBank/Python/BankeApp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daySeven/bankeBank/Python/BankeAppTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/daySeven/bankeBank/Python/BankeaAppMain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateOne.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldSnacks/Python/creditCardValidator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Java/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Java/AccountTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Java/BankeApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Java/BankeAppMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Java/BankeAppTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Python/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Python/.idea/Python.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Python/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Python/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Python/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Python/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Python/Account.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Python/AccountTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Python/BankeApp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Python/BankeAppTest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/bankeBank/Python/BankeaAppMain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/menstrualWahala/CycleTracker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/menstrualWahala/CycleTrackerMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/menstrualWahala/CycleTrackerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/menstrualWahala/MenstrualCycle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/menstrualWahala/MenstrualCycleTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/phoneBook/Contact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/phoneBook/ContactTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/phoneBook/PhoneBook.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/phoneBook/PhoneBookMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/daySeven/phoneBook/PhoneBookTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/gateOne.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/oldSnacks/Java/CheckOutApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/oldSnacks/Java/CreditCardValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/oldSnacks/Java/PersonalityTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/oldSnacks/Java/StudentGrade.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/oldSnacks/Python/CheckOutApp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/oldSnacks/Python/creditCardValidator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/gateOne/oldSnacks/Python/personality_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/daySeven/bankeBank/Python/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gateOne.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daySeven/bankeBank/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/daySeven/bankeBank/Java/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daySeven/bankeBank/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/daySeven/bankeBank/Java/AccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daySeven/bankeBank/BankeApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/daySeven/bankeBank/Java/BankeApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daySeven/bankeBank/BankeAppMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/daySeven/bankeBank/Java/BankeAppMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daySeven/bankeBank/BankeAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/daySeven/bankeBank/Java/BankeAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daySeven/menstrualWahala/CycleTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/daySeven/menstrualWahala/CycleTracker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daySeven/menstrualWahala/MenstrualCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/daySeven/menstrualWahala/MenstrualCycle.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Quayyum-a&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Quayyum-a/Task-assignments.git&quot;,
+    &quot;accountId&quot;: &quot;2bf823a8-87fd-4f7d-962f-98a748a313d8&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2vLJY6asr712fuAi0jkxCigik2h" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BankAppMain.executor": "Run",
+    "Application.BankeAppMain.executor": "Run",
+    "Application.CreditCardValidator.executor": "Run",
+    "Application.CycleTrackerMain.executor": "Run",
+    "Application.PhoneBookMain.executor": "Run",
+    "Application.StudentGrade.executor": "Coverage",
+    "Application.daySeven.bankeBank.Java.BankeAppMain.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.AccountTest.executor": "Run",
+    "JUnit.BankeAppTest (1).executor": "Coverage",
+    "JUnit.BankeAppTest.executor": "Coverage",
+    "JUnit.BankeAppTest.test_FirstNameInvalid.executor": "Run",
+    "JUnit.BankeAppTest.test_MultipleTransfers.executor": "Run",
+    "JUnit.BankeAppTest.test_NumberOfAccounts.executor": "Run",
+    "JUnit.BankeAppTest.test_SetActiveAccount.executor": "Run",
+    "JUnit.BankeAppTest.test_TransferValid.executor": "Run",
+    "JUnit.BankeAppTest.test_ValidAccountCreation.executor": "Run",
+    "JUnit.ContactTest.contactCreationWithEmptyFirstNameThrowsException.executor": "Run",
+    "JUnit.ContactTest.executor": "Run",
+    "JUnit.ContactTest.test_ContactCreation.executor": "Run",
+    "JUnit.ContactTest.test_ContactDetails.executor": "Run",
+    "JUnit.CycleTrackerTest.executor": "Run",
+    "JUnit.MenstrualCycleTest.executor": "Run",
+    "JUnit.PhoneBookTest.executor": "Coverage",
+    "JUnit.PhoneBookTest.testFindByPhoneNumber.executor": "Run",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.codeium.enabled": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.daySeven.bankeBank.Java.BankeAppMain">
+    <configuration name="BankeAppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="daySeven.bankeBank.BankeAppMain" />
+      <module name="gateOne" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="daySeven.bankeBank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CycleTrackerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="daySeven.menstrualWahala.CycleTrackerMain" />
+      <module name="gateOne" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="daySeven.menstrualWahala.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="daySeven.bankeBank.Java.BankeAppMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="daySeven.bankeBank.Java.BankeAppMain" />
+      <module name="gateOne" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="daySeven.bankeBank.Java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankeAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gateOne" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="daySeven.bankeBank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="daySeven.bankeBank" />
+      <option name="MAIN_CLASS_NAME" value="daySeven.bankeBank.BankeAppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gateOne" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="daySeven.phoneBook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="daySeven.phoneBook" />
+      <option name="MAIN_CLASS_NAME" value="daySeven.phoneBook.ContactTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.daySeven.bankeBank.Java.BankeAppMain" />
+        <item itemvalue="JUnit.BankeAppTest" />
+        <item itemvalue="Application.BankeAppMain" />
+        <item itemvalue="Application.CycleTrackerMain" />
+        <item itemvalue="JUnit.ContactTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="865f9944-68f8-4779-9d93-445a18f68dae" name="Changes" comment="" />
+      <created>1743918467502</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743918467502</updated>
+      <workItem from="1743918468705" duration="20097000" />
+      <workItem from="1744034322771" duration="7129000" />
+      <workItem from="1744101171252" duration="1883000" />
+      <workItem from="1744103136309" duration="1137000" />
+      <workItem from="1744104370461" duration="2399000" />
+      <workItem from="1744106882096" duration="21968000" />
+      <workItem from="1744166405722" duration="637000" />
+      <workItem from="1744167519643" duration="2283000" />
+      <workItem from="1744170182110" duration="7004000" />
+      <workItem from="1744188339562" duration="10906000" />
+      <workItem from="1744240471536" duration="106000" />
+      <workItem from="1744240670217" duration="9879000" />
+      <workItem from="1744263626721" duration="1475000" />
+    </task>
+    <task id="LOCAL-00001" summary="Amended">
+      <option name="closed" value="true" />
+      <created>1743920202727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743920202727</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Amended">
+      <option name="closed" value="true" />
+      <created>1744129777876</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744129777876</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Amended">
+      <option name="closed" value="true" />
+      <created>1744220592655</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744220592655</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Amended" />
+    <option name="LAST_COMMIT_MESSAGE" value="Amended" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/gateOne$BankeAppTest__1_.ic" NAME="BankeAppTest (1) Coverage Results" MODIFIED="1744114429880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>daySeven.bankeBank.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/gateOne$PhoneBookTest.ic" NAME="PhoneBookTest Coverage Results" MODIFIED="1744188880667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>daySeven.phoneBook.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/gateOne$BankeAppTest.ic" NAME="BankeAppTest Coverage Results" MODIFIED="1744246205277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>daySeven.bankeBank.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/gateOne$AccountTest.ic" NAME="AccountTest Coverage Results" MODIFIED="1744114499793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>daySeven.bankeBank.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/gateOne$StudentGrade.ic" NAME="StudentGrade Coverage Results" MODIFIED="1743919552932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>oldSnacks.Java.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/gateOne$MenstrualCycleTest.ic" NAME="MenstrualCycleTest Coverage Results" MODIFIED="1743919155114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>daySeven.menstrualWahala.*</FILTER>
+    </SUITE>
+  </component>
+</project>

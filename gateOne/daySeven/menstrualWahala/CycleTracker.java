@@ -7,7 +7,7 @@ public class CycleTracker {
     private final Map<String, MenstrualCycle> users = new HashMap<>();
     private MenstrualCycle activeCycle;
 
-    public String createCycle(String userId, String startDate) {
+    public void createCycle(String userId, String startDate) {
         if (userId == null || userId.trim().isEmpty()) {
             throw new IllegalArgumentException("User ID cannot be null or empty");
         }
@@ -15,7 +15,6 @@ public class CycleTracker {
         cycle.setStartDate(startDate);
         users.put(userId, cycle);
         activeCycle = cycle;
-        return userId;
     }
 
     public void login(String userId) {

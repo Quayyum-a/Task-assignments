@@ -1,4 +1,6 @@
-package daySeven.bankeBank;
+package daySeven.bankeBank.Java;
+
+import daySeven.bankeBank.Java.Account;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -53,6 +55,9 @@ public class BankeApp {
         Account recipient = accounts.get(recipientAccountNumber);
         if (recipient == null) {
             throw new IllegalArgumentException("Recipient account does not exist");
+        }
+        if (recipient.getAccountNumber().equals(activeAccount.getAccountNumber())) {
+            throw new IllegalArgumentException("Cannot transfer to the same account");
         }
         activeAccount.withdraw(amount, pin);
         recipient.deposit(amount);
