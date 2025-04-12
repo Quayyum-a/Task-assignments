@@ -1,0 +1,109 @@
+package daySeven.bankeBank;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class BankeApp {
+    private final Map<String, Account> accounts = new HashMap<>();
+    private Account activeAccount;
+
+    public void createAccount(String firstName, String lastName, int pin) {
+        validateName(firstName);
+        validateName(lastName);
+        validatePin(pin);
+        String accountId = generateAccountId(firstName, lastName);
+        Account newAccount = new Account(firstName, lastName, pin);
+        accounts.put(accountId, newAccount);
+        activeAccount = newAccount;
+    }
+
+    public void setActiveAccount(String accountId) {
+        activeAccount = accounts.get(accountId);
+        if (activeAccount == null) {
+            throw new IllegalArgumentException("Account not found");
+        }
+    }
+
+    public int getAccounts() {
+        return accounts.size();
+    }
+
+    public void closeAccount() {
+        if (activeAccount == null) {
+            throw new IllegalStateException("No active account to close");
+        }
+        accounts.remove(activeAccount.getAccountId());
+        activeAccount = null;
+    }
+
+    public void deposit(double amount) {
+        if (activeAccount == null) {
+            throw new IllegalStateException("No active account");
+        }
+        activeAccount.deposit(amount);
+    }
+
+    public void withdraw(double amount, int enteredPin) {
+        if (activeAccount == null) {
+            throw new IllegalStateException("No active account");
+        }
+        activeAccount.withdraw(amount, enteredPin);
+    }
+
+    public double getBalance() {
+        if (activeAccount == null) {
+            throw new IllegalStateException("No active account");
+        }
+        return activeAccount.getBalance();
+    }
+
+    public void transfer(Account recipient, double amount, int enteredPin) {
+        if (activeAccount == null) {
+            throw new IllegalStateException("No active account");
+        }
+        activeAccount.withdraw(amount, enteredPin);
+        recipient.deposit(amount);
+    }
+
+    public void changePin(int oldPin, int newPin) {
+        if (activeAccount == null) {
+            throw new IllegalStateException("No active account");
+        }
+        activeAccount.changePin(oldPin, newPin);
+    }
+
+    public boolean verifyPin(int enteredPin) {
+        if (activeAccount == null) {
+            throw new IllegalStateException("No active account");
+        }
+        return activeAccount.verifyPin(enteredPin);
+    }
+
+    public boolean accountExists() {
+        return activeAccount != null;
+    }
+
+    private void validateName(String name) {
+        if (!name.matches("^[A-Za-z]+$")) {
+            throw new IllegalArgumentException("Name should contain only letters");
+        }
+    }
+
+    private void validatePin(int pin) {
+        if (String.valueOf(pin).length() != 4 || !String.valueOf(pin).matches("^[0-9]+$")) {
+            throw new IllegalArgumentException("PIN must be exactly 4 digits");
+        }
+    }
+
+    private String generateAccountId(String firstName, String lastName) {
+        return firstName.substring(0, 1) + lastName.substring(0, 1) + (int) (Math.random() * 10000);
+    }
+
+    public String getAccount() {
+        return activeAccount.getFirstName() + " " + activeAccount.getLastName();
+    }
+
+    public Account getAccountById(String accountId) {
+        return accounts.get(accountId);
+    }
+}
